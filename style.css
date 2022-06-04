@@ -1,0 +1,222 @@
+/* body desgin*/
+body {
+    margin: 0;
+    background: url(image/background/Amoebas\ Amoebas\ Everywhere!.jfif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 800px;
+
+}
+
+
+
+.hide {
+    display: none;
+}
+
+:root {
+    --darkgreen: #052918;
+    --gold: #737147;
+    --graytaskback: #61616175;
+    --grayfont: #272727;
+    --backMenuGray: rgba(122, 122, 122, 0.445);
+}
+
+@font-face {
+    font-family: vib;
+    src: url(font/Great_Vibes/GreatVibes-Regular.ttf);
+}
+
+
+
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+#questionform {
+    background-color: #61616175;
+    height: 600px;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 2.5% auto;
+}
+
+
+input {
+    outline: none;
+    appearance: none;
+    border: none;
+    background: none;
+
+}
+
+/*  load page desgin  */
+.head {
+    display: flex;
+    justify-content: center;
+}
+
+h1 {
+    color: aliceblue;
+    margin-bottom: 2%;
+}
+
+/*form */
+.newform h3 {
+    font-family: pop;
+    color: aliceblue;
+}
+
+#newform {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*input name in form*/
+#name {
+    flex: 1 1 0%;
+    display: flex;
+    width: 50%;
+    height: 40px;
+    border: 1px solid#737147;
+    padding: 1%;
+    background-color: var(--grayfont);
+    margin: 1% 9.5%;
+    color: white;
+
+}
+
+/*input age in form*/
+#age {
+    flex: 1 1 0%;
+    display: flex;
+    width: 50%;
+    height: 40px;
+    border: 1px solid#737147;
+    padding: 1%;
+    background-color: var(--grayfont);
+    margin: 0% 9.5%;
+    color: white;
+}
+
+/*input  start */
+#substr {
+    flex: 1 1 0%;
+    border: 1px solid#737147;
+    padding: 1%;
+    width: 20%;
+    margin: 4% 9.5%;
+    background-color: var(--gold);
+    transition: all 0.4s;
+    color: aliceblue;
+}
+
+
+
+#sub:hover {
+    background-color: var(--darkgreen);
+    font-size: 18px;
+}
+
+/*queston page  */
+.quiz {
+
+    width: 70%;
+    margin: 5vh auto;
+    background: #464646;
+    opacity: 0.6;
+    padding: 2.5%;
+
+}
+
+/*number question*/
+.numquestion {
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.numquestion {
+    color: wheat;
+}
+
+.numquestion h1 {
+    margin: 0;
+}
+
+/*container for quiz*/
+#quizbox {
+    background-color: aliceblue;
+    border-radius: 2%;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    padding: 4%;
+
+}
+
+.questions {
+    display: flex;
+    justify-content: center;
+}
+
+.questions img {
+    width: 300px;
+}
+
+/*answer design*/
+#answers {
+    margin: 3% auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+
+}
+
+#answers img {
+    width: 100px;
+}
+
+#answers p {
+    margin: 2%;
+    color: #052918;
+}
+
+#answers p:active img {
+    border: 1px solid var(--gold);
+}
+
+#answers p:hover img {
+    transform: scale(.9);
+}
+
+/*button next and previous*/
+#btnBackNext {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+#btnBackNext input {
+    width: 100px;
+    height: 40px;
+    background-color: #737147;
+    color: rgb(255, 255, 255);
+    margin: 10% 1%;
+
+}
+
+#btnBackNext input:focus {
+    color: #052918;
+    background-color: #4d4a1d;
+}
