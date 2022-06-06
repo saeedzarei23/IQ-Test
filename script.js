@@ -159,10 +159,17 @@ btnBackNext.appendChild(next)
 
 
 
-//create form for add information
+
+
+
+//create form for add information+++++++++++++++++++++++++++++++
+let questionhide=document.createElement('div')
+questionhide.setAttribute('id', 'infohide')
+container.appendChild(questionhide)
+
 let questionform = document.createElement('div')
 questionform.setAttribute('id', 'questionform')
-container.appendChild(questionform)
+questionhide.appendChild(questionform)
 
 // div for title
 let head = document.createElement('div')
@@ -220,14 +227,28 @@ infoForm.appendChild(ages)
 
 
 let startbtnel = document.createElement('input')
-startbtnel.type = 'button',
+startbtnel.type = 'submit',
     startbtnel.id = 'substr',
     startbtnel.value = 'START',
     startbtnel.className = 'btnstr'
 
 infoForm.appendChild(startbtnel)
 
-
+//input type!==
+infoForm.addEventListener('submit',(e)=>{
+  e.preventDefault();
+  const outputage=ages.value;
+  if(!outputage){
+    questionel.classList.add('hide')
+    alert("please fill out ");
+    return;
+  }
+  const outputname=names.value;
+    if(!outputname){
+      questionel.classList.add('hide')
+      alert("please fill out ");
+    }
+     }) 
 
 
 //------------------------function for start home--------------
@@ -236,7 +257,7 @@ infoForm.appendChild(startbtnel)
 const startbtn = document.getElementById('substr');
 
 //question form add to varible formhide
-const formhide = document.getElementById('questionform');
+const formhide = document.getElementById('infohide');
 
 ////div question element add to varible questionelement
 const questionelement = document.getElementById('questionConElm')
@@ -246,11 +267,27 @@ startbtn.addEventListener('click', startQuestion)
 
 //run function
 function startQuestion() {
+  
     console.log('started');
     // class hide remove for div questionConElm
     questionelement.classList.remove('hide');
     // class hide +background
     formhide.classList.add('hide');
+    const outputage=ages.value;
+    const outputname=names.value;
+    if(!outputage){
+      formhide.classList.remove('hide');
+    }
+      if(!outputname){
+        formhide.classList.remove('hide');
+      }
 
 }
+
+
+
+
+
+
+
 //function if input  type text==! 
