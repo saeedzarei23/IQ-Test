@@ -77,11 +77,6 @@ let imageQuestion = document.createElement('div');
 imageQuestion.classList.add('imageQuestions')
 quizboxs.appendChild(imageQuestion)
 
-//class for the image of  questions +++++
-let questions = document.createElement('div');
-questions.classList.add('questions')
-imageQuestion.appendChild(questions)
-
 
 //class for image in questions +++++
 let questions = document.createElement('div');
