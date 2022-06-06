@@ -82,85 +82,48 @@ let questions = document.createElement('div');
 questions.classList.add('questions')
 imageQuestion.appendChild(questions)
 
-//add image for   showing question
-let picQuestion = document.createElement('img');
-picQuestion.setAttribute('src', 'image/Images/1/test1.png')
-picQuestion.setAttribute("width", "304");
-picQuestion.setAttribute("height", "228");
-picQuestion.setAttribute("alt", "thequestion");
-questions.appendChild(picQuestion)
 
-
-//answer
-//div for answer +++++
+//class for image in questions +++++
+let questions = document.createElement('div');
+questions.classList.add('questions')
+imageQuestion.appendChild(questions)
+//div for answer
 let answers = document.createElement('div')
 answers.setAttribute('id', 'answers')
 imageQuestion.appendChild(answers)
-//create div for picanswer
-let p1 = document.createElement('p')
-p1.setAttribute('id', 'p1')
-answers.appendChild(p1)
-//adding img for answer1
-let img1 = document.createElement('img')
-img1.setAttribute('src', 'image/Images/1/1-1.png')
-
-img1.setAttribute("alt", "the answer 1");
-p1.appendChild(img1)
-
-//create div for picanswer2
-let p2 = document.createElement('p')
-p2.setAttribute('id', 'p2')
-answers.appendChild(p2)
-//adding img for answer2
-let img2 = document.createElement('img')
-img2.setAttribute('src', 'image/Images/1/1-2.png')
-
-img2.setAttribute("alt", "the answer 2");
-p2.appendChild(img2)
 
 
-//pic answer3
-let p3 = document.createElement('p')
-p3.setAttribute('id', 'p3')
-answers.appendChild(p3)
-//adding img for answer3
-let img3 = document.createElement('img')
-img3.setAttribute('src', 'image/Images/1/1-3.png')
 
-img3.setAttribute("alt", "the answer 3");
-p3.appendChild(img3)
+for (let i = 4; i==4; i++) {
+    let question_img = document.createElement("img");
+    question_img.setAttribute("src", "image/Images/" + [i] + "/test" + [i] + ".png");
+    questions.appendChild(question_img);
+    //   this if statemen help us go throg all the picture below folder 12 that have 6 picture
+    if (i <= 12) {
+      for (let j = 1; j <= 6; j++) {
+        let answer_img = document.createElement("img");
+        answer_img.setAttribute(
+          "src",
+          "image/Images/" + [i] + "/" + [i] + "-" + [j] + ".png"
+        );
+        answers.appendChild(answer_img);
+      }
+    }
+    //  after the 12 this loop happend that help us get all the question that have 8 answer
+    else {
+      for (let j = 1; j <= 8; j++) {
+        let answer_img = document.createElement("img");
+        answer_img.setAttribute(
+          "src",
+          "image/Images/" + [i] + "/" + [i] + "-" + [j] + ".png"
+        );
+        answers.appendChild(answer_img);
+      }
+    }
+  }
 
-//pic answer4
-let p4 = document.createElement('p')
-p4.setAttribute('id', 'p4')
-answers.appendChild(p4)
-//adding img for answer1
-let img4 = document.createElement('img')
-img4.setAttribute('src', 'image/Images/1/1-4.png')
 
-img1.setAttribute("alt", "the answer 4");
-p4.appendChild(img4)
 
-//pic answer5
-let p5 = document.createElement('p')
-p5.setAttribute('id', 'p5')
-answers.appendChild(p5)
-//adding img for answer1
-let img5 = document.createElement('img')
-img5.setAttribute('src', 'image/Images/1/1-5.png')
-img5.setAttribute("alt", "the answer 5");
-p5.appendChild(img5)
-
-//pic answer6
-let p6 = document.createElement('p')
-p6.setAttribute('id', 'p6')
-answers.appendChild(p6)
-//adding img for answer1
-let img6 = document.createElement('img')
-img6.setAttribute('src', 'image/Images/1/1-6.png')
-
-img6.setAttribute("alt", "the answer 6");
-p6.appendChild(img6)
 
 
 
