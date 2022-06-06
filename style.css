@@ -183,20 +183,16 @@ h1 {
 
 }
 
-#answers img {
-    width: 100px;
-}
-
-#answers p {
+#answer p {
     margin: 2%;
     color: #052918;
 }
 
-#answers p:active img {
+#answer:active img {
     border: 1px solid var(--gold);
 }
 
-#answers p:hover img {
+#answer:hover {
     transform: scale(.9);
 }
 
