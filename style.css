@@ -157,7 +157,7 @@ h1 {
 #quizbox {
     background-color: aliceblue;
     border-radius: 2%;
-    width: 91%;
+    width: 92%;
     display: flex;
     justify-content: center;
     padding: 4%;
@@ -187,6 +187,7 @@ h1 {
 #picanswer {
     margin: 2px;
     color: #052918;
+      border: 1px solid var(--darkgreen);
 }
 
 #picanswer:active  {
