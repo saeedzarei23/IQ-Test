@@ -38,7 +38,7 @@ body {
 #questionform {
     background-color: #61616175;
     height: 600px;
-    width: 70%;
+    width: 80%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -127,7 +127,7 @@ h1 {
 /*queston page  */
 .quiz {
 
-    width: 70%;
+    width: 90%;
     margin: 5vh auto;
     background: #464646;
     opacity: 0.6;
@@ -157,7 +157,7 @@ h1 {
 #quizbox {
     background-color: aliceblue;
     border-radius: 2%;
-    width: 90%;
+    width: 91%;
     display: flex;
     justify-content: center;
     padding: 4%;
@@ -169,9 +169,6 @@ h1 {
     justify-content: center;
 }
 
-.questions img {
-    width: 300px;
-}
 
 /*answer design*/
 #picQuestion{
@@ -188,7 +185,7 @@ h1 {
 }
 
 #picanswer {
-    margin: 1%;
+    margin: 2px;
     color: #052918;
 }
 
