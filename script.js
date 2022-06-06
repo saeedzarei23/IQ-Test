@@ -91,12 +91,14 @@ imageQuestion.appendChild(answers)
 
 for (let i = 4; i==4; i++) {
     let question_img = document.createElement("img");
+  question_img.setAttribute('id','picQuestion');
     question_img.setAttribute("src", "image/Images/" + [i] + "/test" + [i] + ".png");
     questions.appendChild(question_img);
     //   this if statemen help us go throg all the picture below folder 12 that have 6 picture
     if (i <= 12) {
       for (let j = 1; j <= 6; j++) {
         let answer_img = document.createElement("img");
+        answer_img.setAttribute('id','picanswer');
         answer_img.setAttribute(
           "src",
           "image/Images/" + [i] + "/" + [i] + "-" + [j] + ".png"
@@ -108,6 +110,7 @@ for (let i = 4; i==4; i++) {
     else {
       for (let j = 1; j <= 8; j++) {
         let answer_img = document.createElement("img");
+        answer_img.setAttribute('id','picanswer');
         answer_img.setAttribute(
           "src",
           "image/Images/" + [i] + "/" + [i] + "-" + [j] + ".png"
