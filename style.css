@@ -188,6 +188,7 @@ h1 {
     margin: 2px;
     color: #052918;
       border: 1px solid var(--darkgreen);
+      transition: all 200ms;
 }
 
 #picanswer:active  {
@@ -195,7 +196,10 @@ h1 {
 }
 
 #picanswer:hover {
-    transform: scale(.9);
+    transform: scale(1.1);
+    background-color: rgb(211, 204, 211);
+    box-shadow: 0 0 10px 2px
+
 }
 /*button next and previous*/
 #btnBackNext {
